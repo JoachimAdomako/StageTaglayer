@@ -1,7 +1,7 @@
 import Blog from './views/blog.vue';
 import HomePage from './views/Home.vue';
 import About from './views/about-me.vue';
-import Contact from './views/contact.vue'
+import Contact from './views/contact.vue';
 
 export const routes = [
     {
