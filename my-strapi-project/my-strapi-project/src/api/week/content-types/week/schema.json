@@ -12,23 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "IdBlog": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
     "Monday": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "Tuesday": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "Wednesday": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "Thursday": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "Friday": {
-      "type": "blocks"
-    },
-    "IdBlog": {
-      "type": "biginteger"
+      "type": "richtext"
     }
   }
 }

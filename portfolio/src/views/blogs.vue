@@ -17,6 +17,10 @@ const filterBlog = blog.data.filter(item => {
 <div class="flex flex-col items-center">
     <div v-for = 'filter in filterBlog' class="flex flex-col flex-wrap w-4/6 bg-white p-8 m-4 shadow-lg rounded-2xl">
         <div v-html="filter.Monday"></div>
+        <div v-html="filter.Tuesday"></div>
+        <div v-html="filter.Wednesday"></div>
+        <div v-html="filter.Thursday"></div>
+        <div v-html="filter.Friday"></div>
     </div>
 </div>
 </template>

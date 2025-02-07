@@ -578,19 +578,21 @@ export interface ApiWeekWeek extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Friday: Schema.Attribute.Blocks;
-    IdBlog: Schema.Attribute.BigInteger;
+    Friday: Schema.Attribute.RichText;
+    IdBlog: Schema.Attribute.BigInteger &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::week.week'> &
       Schema.Attribute.Private;
-    Monday: Schema.Attribute.Blocks;
+    Monday: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
-    Thursday: Schema.Attribute.Blocks;
-    Tuesday: Schema.Attribute.Blocks;
+    Thursday: Schema.Attribute.RichText;
+    Tuesday: Schema.Attribute.RichText;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Wednesday: Schema.Attribute.Blocks;
+    Wednesday: Schema.Attribute.RichText;
   };
 }
 
