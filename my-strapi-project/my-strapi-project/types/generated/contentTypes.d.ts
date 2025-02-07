@@ -566,6 +566,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiWeekWeek extends Struct.CollectionTypeSchema {
   collectionName: 'weeks';
   info: {
+    description: '';
     displayName: 'Week';
     pluralName: 'weeks';
     singularName: 'week';
@@ -578,6 +579,7 @@ export interface ApiWeekWeek extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Friday: Schema.Attribute.Blocks;
+    IdBlog: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::week.week'> &
       Schema.Attribute.Private;
