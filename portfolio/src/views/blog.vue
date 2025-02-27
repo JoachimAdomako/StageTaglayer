@@ -16,7 +16,6 @@ export default {
   methods:{
     goToBlogDetail(number){
       this.$router.push(`blog/${number}`)
-      console.log("hello")
     }
   }
 }
